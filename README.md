@@ -1,21 +1,31 @@
 # Docker-Compose
 
-This project demonstrates how to:
+A simple example project demonstrating how to dockerize a Spring Boot application with MySQL using Docker Compose.
 
-Develop a simple Spring Boot application with JPA/Hibernate and MySQL.
-Package the app into a Docker container.
-Set up MySQL 8 in Docker with a custom database (dockerize_db) and password (test123).
-Use Docker Compose to orchestrate both the Spring Boot app and MySQL.
-Automatically create tables (e.g. users) on startup.
+---
 
-✅ How to run
+## Features
 
-mvn clean package -DskipTests
-docker-compose up --build
+- Spring Boot 3 with Java 17
+- MySQL 8 as the database
+- JPA/Hibernate for ORM and auto table creation
+- Docker containerization of both Spring Boot app and MySQL
+- Docker Compose to orchestrate containers
 
-✅ Features
+---
 
-Spring Boot 3 + Java 17
-MySQL 8 as database
-JPA auto-creates schema
-Docker + Docker Compose integration
+## Prerequisites
+
+- Java 17 installed
+- Maven installed
+- Docker & Docker Compose installed
+
+---
+
+## Setup and Run
+
+   ```bash
+   mvn clean package -DskipTests
+   docker-compose up --build
+
+
